@@ -1,0 +1,8 @@
+<h2> Voici le gossip n° <%= @gossip.id %> </h2>
+<p>Prénom, nom : <%= @gossip.user.first_name%> <%= @gossip.user.last_name%></p>
+<p>Titre du potin : <%= @gossip.title%></p>
+<p>Contenu du potin : <%= @gossip.content%></p>
+<br>
+<p>Modifie ton potin : <a href="<%= edit_gossip_path %>" class="btn btn-primary">Modifier</a></p>
+<br>
+<p><a href="<%= root_path %>" class="btn btn-primary">Revenir aux articles</a></p>

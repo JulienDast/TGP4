@@ -1,0 +1,15 @@
+<h1>Connecte toi</h1>
+
+   <div class="col-12">
+        <div class="form-group">
+            <%= form_tag sessions_path, method: "post" do %>  
+            <br />
+            <%= label_tag "Email" %>
+            <%= text_area_tag 'email', @user.email, class: 'form-control' %>
+            <br />
+            <%= label_tag 'Mot de passe' %>
+            <%= text_area_tag 'password', @user.password, class: 'form-control' %>
+            <br />                             
+            <%= submit_tag "Connexion !", class: 'btn btn-success' %>
+          <% end %>
+    </div>
